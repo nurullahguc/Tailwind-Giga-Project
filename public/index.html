@@ -54,7 +54,7 @@
                     <!-- Search Area -->
                     <form>
                         <div class="group border-r px-4 mx-4 py-1 border-gega-red">
-                            <input type="text" class="opacity-0 group hover:opacity-100 border-b text-gega-red border-gega-red focus:outline-none w-24 lg:w-44 transition duration-500">
+                            <input type="text" class="opacity-0 group bg-transparent hover:opacity-100 border-b text-gega-red border-gega-red focus:outline-none w-24 lg:w-44 transition duration-500">
                             <button class="-ml-4 group-hover:ml-0 transition duration-500"><i
                                     class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
                         </div>
@@ -62,7 +62,8 @@
                     <!-- Sign Up Aera -->
                     <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
                         <a href="#">Login</a>
-                        <a href="#" class="bg-gega-red px-3 py-1 hover:bg-gega-melon hover:text-gega-red cursor-pointer transition duration-500 whitespace-nowrap ">Sign Up</a>
+                        <a href="#" class="bg-gega-red px-3 py-1 hover:bg-gega-melon hover:text-gega-red cursor-pointer transition duration-500 whitespace-nowrap ">Sign
+                            Up</a>
                     </div>
                 </div>
             </nav>
@@ -71,9 +72,48 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="h-96 group relative">
+    <section class="h-64 md:h-96 lg:h-128 group relative">
         <!-- Hero Image -->
-        <img src="./images/batman.jpg" alt="Main Image">
+        <img src="./images/batman.jpg" alt="Main Image" class="h-full w-full object-cover">
+
+        <!-- Hero Content -->
+        <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+            <!-- Hero Content Container -->
+            <div class="container pl-10 lg:pl-0">
+                <h3 class="text-gega-melon tracking-wider group-hover:mb-1 duration-500">
+                    Action, drama, thriller
+                </h3>
+                <h1 class="text-4xl lg:text-6xl text-gega-grey group-hover:mb-1 duration-500">The Dark Knight</h1>
+                <p class="text-gega-grey group-hover:mb-2 text-sm lg:text-base duration-500 w-3/4 lg:w-2/3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quia at quidem reprehenderit perspiciatis totam sapiente tempore ipsa provident dolorem?</p>
+                <!-- Detail Container-->
+
+                <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000">
+                    <!-- Watch -->
+                    <div class="flex space-x-2 items-center cursor-pointer">
+                        <a href="#" class="text-gega-red uppercase lg:text-lg hover:text-gega-red duration-500">Watch Trailer</a>
+                        <div class="flex h-8 w-8 justify-center items-center bg-gega-red rounded-full text-gega-grey">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="flex space-x-2 items-center cursor-pointer">
+                        <a href="#" class="text-gega-red uppercase lg:text-lg hover:text-gega-red duration-500">Full Synopsis</a>
+                        <div class="flex h-8 w-8 justify-center items-center bg-gega-red rounded-full text-gega-grey">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Points -->
+        <div class="flex space-x-3 absolute bottom-5 left-0 right-0 justify-center opacity-0 group-hover:opacity-100 duration-1000">
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-red cursor-pointer"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey cursor-pointer"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey cursor-pointer"></div>
+            <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey cursor-pointer"></div>
+        </div>
+
     </section>
 
 
